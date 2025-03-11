@@ -9,6 +9,16 @@
 #   end
 
 Product.destroy_all
+User.destroy_all
+
+
+puts "Creating users..."
+
+ User.create!(
+  email: 'laymui@gmail.com',
+  password: '123456'
+)
+
 
 Product.create!(name: "Trousers", description: "A pair of bluejeans best suited for tall people.", price: 50)
 Product.create!(name: "Shirt", description: "A white shirt with a pocket.", price: 20)
